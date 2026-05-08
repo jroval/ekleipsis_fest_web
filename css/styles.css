@@ -110,6 +110,43 @@ a {
   height: 60px;
 }
 
+/* ── HEADER RIGHT (switcher + hamburger) ────────────────────── */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ── LANGUAGE SWITCHER ──────────────────────────────────────── */
+.language-switcher {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  position: relative;
+}
+
+.lang-btn {
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--light);
+  font-family: var(--font-body);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  padding: 7px 9px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.lang-btn:hover,
+.lang-btn.active {
+  background: var(--gold);
+  color: var(--black);
+  border-color: var(--gold);
+}
+
+/* ── MAIN NAV ───────────────────────────────────────────────── */
 .main-nav {
   display: none;
   gap: 30px;
@@ -141,6 +178,7 @@ a {
   width: 22px;
   height: 2px;
   background: var(--light);
+  display: block;
 }
 
 .main-nav.active {
@@ -157,35 +195,6 @@ a {
 .main-nav.active a {
   padding: 14px 0;
   border-bottom: 1px solid rgba(255,255,255,0.08);
-}
-
-/* ── LANGUAGE SWITCHER ──────────────────────────────────────── */
-.language-switcher {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  margin-left: 14px;
-}
-
-.lang-btn {
-  border: 1px solid rgba(255, 255, 255, 0.22);
-  background: rgba(255, 255, 255, 0.08);
-  color: var(--light);
-  font-family: var(--font-body);
-  font-size: 0.68rem;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  padding: 7px 9px;
-  border-radius: 999px;
-  cursor: pointer;
-  transition: 0.25s ease;
-}
-
-.lang-btn:hover,
-.lang-btn.active {
-  background: var(--gold);
-  color: var(--black);
-  border-color: var(--gold);
 }
 
 /* ── HERO ─────────────────────────────────────────────────── */
@@ -933,8 +942,6 @@ a {
   z-index: 1;
 }
 
-
-
 .map-bg {
   position: absolute;
   inset: 0;
@@ -1191,19 +1198,6 @@ a {
   .summary-item {
     min-height: 150px;
   }
-
-  .language-switcher {
-    width: 100%;
-    justify-content: center;
-    margin: 14px 0 0;
-    padding-top: 12px;
-    border-top: 1px solid rgba(255,255,255,0.12);
-  }
-
-  .lang-btn {
-    font-size: 0.72rem;
-    padding: 8px 12px;
-  }
 }
 
 @media (max-width: 620px) {
@@ -1270,6 +1264,57 @@ a {
     top: 72px;
   }
 
+  /* ── DROPDOWN IDIOMA MÓVIL ───────────────────────────────── */
+
+  /* Oculta todos los botones menos el activo */
+  .language-switcher .lang-btn {
+    display: none;
+  }
+
+  /* El activo se convierte en el trigger del dropdown */
+  .language-switcher .lang-btn.active {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 7px 10px;
+    font-size: 0.68rem;
+  }
+
+  /* Flecha ▾ */
+  .language-switcher .lang-btn.active::after {
+    content: "▾";
+    font-size: 0.65rem;
+    opacity: 0.8;
+  }
+
+  /* Cuando está abierto muestra todos */
+  .language-switcher.open .lang-btn {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Panel desplegable */
+  .language-switcher.open {
+    flex-direction: column;
+    align-items: stretch;
+    position: absolute;
+    top: 56px;
+    right: 52px;
+    background: rgba(8,8,15,0.97);
+    border: 1px solid rgba(255,255,255,0.14);
+    border-radius: 10px;
+    padding: 6px;
+    gap: 4px;
+    z-index: 99999;
+    min-width: 68px;
+  }
+
+  /* Quita la flecha cuando está abierto */
+  .language-switcher.open .lang-btn.active::after {
+    display: none;
+  }
+
+  /* ── HERO MÓVIL ─────────────────────────────────────────── */
   .hero {
     min-height: 100svh;
     padding: 96px 20px 42px;
@@ -1445,6 +1490,16 @@ a {
     flex-direction: row;
     background: none;
     padding: 0;
+  }
+
+  /* En desktop el switcher va dentro del nav flow normal */
+  .header-right {
+    display: contents;
+  }
+
+  .language-switcher {
+    margin-left: 14px;
+    order: 1;
   }
 }
 
