@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Contacto · Ekleipsis Fest 2026</title>
+
   <meta name="description" content="Contacta con Ekleipsis Fest 2026 para dudas sobre entradas, glamping, colaboraciones, prensa, patrocinios o información general del festival." />
   <meta name="robots" content="index, follow" />
 
@@ -12,6 +13,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=Judson:wght@400;700&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="css/contacto.css" />
@@ -78,17 +80,22 @@
 
         <div class="form-fields">
 
-          <form id="contactForm"
-      name="contacto-general"
-      method="POST"
-      action="/contacto.html?success=true"
-      data-netlify="true"
-      data-netlify-honeypot="bot-field">
+          <form
+            id="contactForm"
+            name="contacto-general"
+            method="POST"
+            action="/contacto.html?success=true"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+          >
 
-  <input type="hidden" name="form-name" value="contacto-general" />
+            <input type="hidden" name="form-name" value="contacto-general" />
 
             <p hidden>
-              <label>No rellenes esto: <input name="bot-field" /></label>
+              <label>
+                No rellenes esto:
+                <input name="bot-field" />
+              </label>
             </p>
 
             <div class="form-row">
@@ -143,6 +150,7 @@
             </p>
 
           </form>
+
         </div>
 
         <div class="form-success">
@@ -170,5 +178,18 @@
   </main>
 
   <script src="js/main.js"></script>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+
+    if (params.get("success") === "true") {
+      const formCard = document.getElementById("formCard");
+
+      if (formCard) {
+        formCard.classList.add("submitted");
+      }
+    }
+  </script>
+
 </body>
 </html>
