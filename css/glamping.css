@@ -1,0 +1,512 @@
+/* ============================================================
+   EKLEIPSIS FEST 2026 — glamping.css
+   ============================================================ */
+
+.page-glamping .site-header {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+  background: rgba(8, 8, 15, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.page-glamping .main-nav a.active {
+  color: var(--gold);
+}
+
+/* ============================================================
+   PAGE
+   ============================================================ */
+
+.page-glamping .glamping-section {
+  padding: 150px 0 110px;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top, rgba(255,209,102,0.08), transparent 34%),
+    #08080f;
+}
+
+/* ============================================================
+   HERO
+   ============================================================ */
+
+.page-glamping .glamp-header {
+  max-width: 860px;
+  margin: 0 auto 80px;
+  text-align: center;
+}
+
+.page-glamping .glamp-header h1 {
+  margin: 0 0 20px;
+  font-family: var(--font-title);
+  font-size: clamp(2.8rem, 7vw, 5.8rem);
+  line-height: 0.9;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.page-glamping .glamp-header h1 span {
+  color: var(--gold);
+}
+
+.page-glamping .glamp-lead {
+  max-width: 680px;
+  margin: 0 auto;
+  color: rgba(255,255,255,0.72);
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+/* ============================================================
+   TIER
+   ============================================================ */
+
+.page-glamping .glamp-tier {
+  margin-bottom: 90px;
+}
+
+.page-glamping .glamp-tier-header {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 34px;
+}
+
+.page-glamping .glamp-tier-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  border-radius: 999px;
+  background: rgba(255,209,102,0.08);
+  border: 1px solid rgba(255,209,102,0.35);
+  color: var(--gold);
+  font-size: 0.84rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.page-glamping .pill-prm {
+  background: rgba(255,139,71,0.1);
+  border-color: rgba(255,139,71,0.4);
+}
+
+.page-glamping .glamp-tier-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    rgba(255,255,255,0.12),
+    transparent
+  );
+}
+
+.page-glamping .glamp-tier-desc {
+  color: rgba(255,255,255,0.55);
+  font-size: 0.88rem;
+  white-space: nowrap;
+}
+
+/* ============================================================
+   LAYOUT
+   ============================================================ */
+
+.page-glamping .glamp-tier-body {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+/* ============================================================
+   CARD
+   ============================================================ */
+
+.page-glamping .glamp-cards {
+  width: 100%;
+}
+
+.page-glamping .glamp-card {
+  position: relative;
+  padding: 42px;
+  border-radius: 34px;
+  background:
+    radial-gradient(circle at top right, rgba(255,209,102,0.08), transparent 38%),
+    rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,209,102,0.22);
+  box-shadow: 0 28px 80px rgba(0,0,0,0.34);
+}
+
+.page-glamping .glamp-card-prm {
+  background:
+    radial-gradient(circle at top right, rgba(255,139,71,0.08), transparent 38%),
+    rgba(255,255,255,0.07);
+
+  border-color: rgba(255,139,71,0.28);
+}
+
+.page-glamping .glamp-hot {
+  position: absolute;
+  top: -16px;
+  left: 42px;
+  padding: 9px 18px;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.page-glamping .hot-std {
+  background: linear-gradient(135deg, var(--gold), #f5a623);
+  color: #110800;
+}
+
+.page-glamping .hot-prm {
+  background: linear-gradient(135deg, var(--orange), #e0621a);
+  color: #fff;
+}
+
+/* ============================================================
+   CARD TOP
+   ============================================================ */
+
+.page-glamping .glamp-card h4 {
+  margin: 0 0 16px;
+  font-family: var(--font-title);
+  font-size: 2.4rem;
+  line-height: 1;
+  color: #fff4d8;
+}
+
+.page-glamping .glamp-sub {
+  max-width: 760px;
+  margin: 0 0 34px;
+  color: rgba(242,242,245,0.72);
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+/* ============================================================
+   FEATURES GRID
+   ============================================================ */
+
+.page-glamping .glamp-feats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0,1fr));
+  gap: 0 26px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.page-glamping .glamp-feats li {
+  display: flex;
+  gap: 10px;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  color: rgba(242,242,245,0.82);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.page-glamping .glamp-feats li::before {
+  content: "✦";
+  color: var(--gold);
+  font-size: 0.58rem;
+  margin-top: 7px;
+  flex-shrink: 0;
+}
+
+/* ============================================================
+   OLYMPIC BOX
+   ============================================================ */
+
+.page-glamping .glamp-olympic {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 0 0 28px;
+  padding: 16px 18px;
+  border-radius: 20px;
+  background: rgba(255,209,102,0.08);
+  border: 1px solid rgba(255,209,102,0.2);
+}
+
+.page-glamping .glamp-olympic-icon {
+  flex-shrink: 0;
+}
+
+.page-glamping .glamp-olympic-icon svg {
+  width: 28px;
+  height: 28px;
+  stroke: var(--gold);
+}
+
+.page-glamping .glamp-olympic strong {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--gold);
+  font-size: 0.84rem;
+}
+
+.page-glamping .glamp-olympic span {
+  display: block;
+  color: rgba(242,242,245,0.64);
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
+/* ============================================================
+   CAROUSEL
+   ============================================================ */
+
+.page-glamping .glamp-carousel {
+  position: relative;
+  border-radius: 34px;
+  overflow: hidden;
+  min-height: 640px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  box-shadow: 0 28px 80px rgba(0,0,0,0.34);
+}
+
+.page-glamping .glamp-carousel-track {
+  display: flex;
+  height: 100%;
+  transition: transform 0.4s ease;
+}
+
+.page-glamping .glamp-carousel-slide {
+  position: relative;
+  min-width: 100%;
+}
+
+.page-glamping .glamp-carousel-slide img {
+  width: 100%;
+  height: 640px;
+  object-fit: cover;
+  display: block;
+}
+
+.page-glamping .glamp-carousel-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, transparent 40%, rgba(0,0,0,0.8)),
+    linear-gradient(90deg, rgba(0,0,0,0.28), transparent 60%);
+}
+
+.page-glamping .glamp-carousel-label {
+  position: absolute;
+  left: 38px;
+  right: 38px;
+  bottom: 38px;
+  max-width: 640px;
+}
+
+.page-glamping .glamp-carousel-label h3 {
+  margin: 0 0 12px;
+  font-family: var(--font-title);
+  font-size: clamp(2rem, 3vw, 3.4rem);
+  line-height: 1;
+  color: #fff;
+}
+
+.page-glamping .glamp-carousel-label p {
+  margin: 0;
+  color: rgba(255,255,255,0.82);
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.page-glamping .glamp-carousel-btn {
+  position: absolute;
+  top: 50%;
+  z-index: 3;
+  width: 52px;
+  height: 52px;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(8,8,15,0.45);
+  backdrop-filter: blur(8px);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
+.page-glamping .glamp-carousel-prev {
+  left: 24px;
+}
+
+.page-glamping .glamp-carousel-next {
+  right: 24px;
+}
+
+.page-glamping .glamp-carousel-btn svg {
+  width: 22px;
+  height: 22px;
+  stroke: currentColor;
+  fill: none;
+}
+
+.page-glamping .glamp-carousel-dots {
+  position: absolute;
+  left: 38px;
+  bottom: 20px;
+  display: flex;
+  gap: 8px;
+}
+
+.page-glamping .glamp-dot {
+  width: 8px;
+  height: 8px;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.45);
+  cursor: pointer;
+}
+
+.page-glamping .glamp-dot.active {
+  width: 24px;
+  background: var(--gold);
+}
+
+/* ============================================================
+   SEPARATOR
+   ============================================================ */
+
+.page-glamping .glamp-sep {
+  height: 1px;
+  margin: 90px 0;
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(255,255,255,0.12),
+      transparent
+    );
+}
+
+/* ============================================================
+   CTA
+   ============================================================ */
+
+.page-glamping .glamp-urgency {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  margin-top: 50px;
+  padding: 28px 34px;
+  border-radius: 28px;
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255,209,102,0.08),
+      rgba(91,58,186,0.14)
+    ),
+    rgba(255,255,255,0.05);
+
+  border: 1px solid rgba(255,209,102,0.2);
+}
+
+.page-glamping .glamp-urgency > svg {
+  width: 28px;
+  height: 28px;
+  stroke: var(--gold);
+  flex-shrink: 0;
+}
+
+.page-glamping .glamp-urgency div {
+  flex: 1;
+}
+
+.page-glamping .glamp-urgency strong {
+  display: block;
+  margin-bottom: 5px;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.page-glamping .glamp-urgency p {
+  margin: 0;
+  color: rgba(242,242,245,0.68);
+  font-size: 0.9rem;
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+@media (max-width: 900px) {
+
+  .page-glamping .glamp-feats {
+    grid-template-columns: 1fr;
+  }
+
+  .page-glamping .glamp-carousel,
+  .page-glamping .glamp-carousel-slide img {
+    min-height: 500px;
+    height: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .page-glamping .glamping-section {
+    padding: 120px 0 80px;
+  }
+
+  .page-glamping .glamp-header {
+    margin-bottom: 56px;
+  }
+
+  .page-glamping .glamp-tier-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .page-glamping .glamp-tier-line {
+    width: 100%;
+  }
+
+  .page-glamping .glamp-card {
+    padding: 36px 24px 24px;
+    border-radius: 28px;
+  }
+
+  .page-glamping .glamp-hot {
+    left: 24px;
+  }
+
+  .page-glamping .glamp-carousel,
+  .page-glamping .glamp-carousel-slide img {
+    min-height: 420px;
+    height: 420px;
+  }
+
+  .page-glamping .glamp-carousel-label {
+    left: 24px;
+    right: 24px;
+    bottom: 32px;
+  }
+
+  .page-glamping .glamp-carousel-label h3 {
+    font-size: 2rem;
+  }
+
+  .page-glamping .glamp-urgency {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .page-glamping .glamp-urgency .btn {
+    width: 100%;
+  }
+}

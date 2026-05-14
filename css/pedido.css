@@ -1,0 +1,301 @@
+/* ============================================================
+   EKLEIPSIS FEST 2026 — pedido.css
+   ============================================================ */
+body {
+  margin: 0;
+  padding-top: 0 !important;
+}
+
+.page-header {
+  padding: 28px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border);
+  background: rgba(8,8,15,0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.page-header img { height: 44px; }
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: rgba(242,242,245,0.6);
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.back-link:hover { color: var(--gold); }
+
+.back-link svg {
+  width: 16px;
+  height: 16px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 2;
+}
+
+.page-main {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 60px 20px 100px;
+}
+
+.form-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border: 1px solid rgba(255,209,102,0.34);
+  border-radius: 999px;
+  background: rgba(255,209,102,0.08);
+  color: var(--gold);
+  font-size: 0.78rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-bottom: 20px;
+}
+
+.form-kicker svg {
+  width: 14px;
+  height: 14px;
+  stroke: var(--gold);
+  fill: none;
+  stroke-width: 2;
+}
+
+.form-title {
+  font-family: var(--font-title);
+  font-size: clamp(2rem, 6vw, 3.4rem);
+  line-height: 0.95;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.form-title span { color: var(--gold); }
+
+.form-lead {
+  color: rgba(242,242,245,0.65);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 44px;
+  max-width: 520px;
+}
+
+.form-card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  padding: 40px 36px;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 24px 80px rgba(0,0,0,0.4);
+}
+
+.form-group { margin-bottom: 22px; }
+
+.form-group label {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(242,242,245,0.55);
+  margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 14px 18px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.14);
+  border-radius: 12px;
+  color: var(--light);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s ease, background 0.2s ease;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder { color: rgba(242,242,245,0.28); }
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: rgba(255,209,102,0.5);
+  background: rgba(255,255,255,0.09);
+}
+
+.form-group select {
+  cursor: pointer;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='rgba(242,242,245,0.4)' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  padding-right: 40px;
+}
+
+.form-group select option { background: #0F1426; color: var(--light); }
+
+.form-group textarea { resize: vertical; min-height: 120px; line-height: 1.6; }
+
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+
+.form-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+  margin: 28px 0;
+}
+
+.glamping-options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 22px;
+}
+
+.glamping-option-card {
+  padding: 14px 12px;
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 12px;
+  background: rgba(255,255,255,0.04);
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.glamping-option-card input[type="radio"] { display: none; }
+
+.glamping-option-card:has(input:checked) {
+  border-color: rgba(255,209,102,0.6);
+  background: rgba(255,209,102,0.1);
+}
+
+.glamping-option-card .opt-name {
+  display: block;
+  font-weight: 800;
+  font-size: 0.82rem;
+  color: var(--light);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.form-submit {
+  width: 100%;
+  padding: 16px 24px;
+  border-radius: 12px;
+  border: none;
+  background: linear-gradient(135deg, var(--gold), #f5a623);
+  color: #130c03;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 8px 28px rgba(255,139,71,0.3);
+  margin-top: 8px;
+}
+
+.form-submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 36px rgba(255,139,71,0.4);
+}
+
+.form-note {
+  margin-top: 16px;
+  text-align: center;
+  font-size: 0.78rem;
+  color: rgba(242,242,245,0.38);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.form-note svg {
+  width: 13px;
+  height: 13px;
+  stroke: rgba(242,242,245,0.38);
+  fill: none;
+  stroke-width: 2;
+  flex-shrink: 0;
+}
+
+.form-success { display: none; text-align: center; padding: 48px 24px; }
+.form-card.submitted .form-fields { display: none; }
+.form-card.submitted .form-success { display: block; }
+
+.success-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: rgba(255,209,102,0.12);
+  border: 1px solid rgba(255,209,102,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 24px;
+}
+
+.success-icon svg {
+  width: 28px;
+  height: 28px;
+  stroke: var(--gold);
+  fill: none;
+  stroke-width: 2;
+}
+
+.success-title {
+  font-family: var(--font-title);
+  font-size: 2rem;
+  margin-bottom: 12px;
+  color: var(--gold);
+}
+
+.success-text {
+  color: rgba(242,242,245,0.65);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  max-width: 380px;
+  margin: 0 auto 28px;
+}
+
+.success-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,209,102,0.4);
+  color: var(--gold);
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 700;
+  transition: background 0.2s ease;
+}
+
+.success-back:hover { background: rgba(255,209,102,0.08); }
+
+@media (max-width: 600px) {
+  .form-card { padding: 28px 20px; }
+  .form-row { grid-template-columns: 1fr; }
+  .glamping-options { grid-template-columns: 1fr; gap: 8px; }
+  .glamping-option-card { display: flex; align-items: center; gap: 12px; text-align: left; }
+  .page-main { padding: 40px 16px 80px; }
+}

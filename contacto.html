@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Contacto · Ekleipsis Fest 2026</title>
+  <meta name="description" content="Contacta con Ekleipsis Fest 2026 para dudas sobre entradas, glamping, colaboraciones, prensa, patrocinios o información general del festival." />
+  <meta name="robots" content="index, follow" />
+
+  <link rel="icon" type="image/png" href="assets/img/fav_icon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=Judson:wght@400;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/contacto.css" />
+</head>
+
+<body>
+
+  <header class="page-header">
+    <a href="index.html" class="header-logo">
+      <img src="assets/img/EKLEIPSIS FEST_logo_final.png" alt="Ekleipsis Fest" />
+    </a>
+
+    <a href="index.html" class="back-link">
+      <svg viewBox="0 0 24 24">
+        <polyline points="15 18 9 12 15 6"></polyline>
+      </svg>
+      Volver al festival
+    </a>
+  </header>
+
+  <main class="contact-page">
+
+    <section class="contact-hero">
+      <span class="contact-kicker">
+        <svg viewBox="0 0 24 24">
+          <path d="M4 4h16v16H4z"></path>
+          <polyline points="22,6 12,13 2,6"></polyline>
+        </svg>
+        Contacto
+      </span>
+
+      <h1>Hablemos de <span>EKLEIPSIS FEST</span></h1>
+
+      <p>
+        ¿Tienes dudas sobre entradas, glamping, colaboraciones, prensa, patrocinios o cualquier aspecto del festival?
+        Escríbenos y te responderemos lo antes posible.
+      </p>
+    </section>
+
+    <section class="contact-layout">
+
+      <aside class="contact-info">
+        <div class="info-card">
+          <span class="info-label">Email</span>
+          <a href="mailto:hola@ekleipsisfest.com">hola@ekleipsisfest.com</a>
+        </div>
+
+        <div class="info-card">
+          <span class="info-label">Instagram</span>
+          <a href="https://www.instagram.com/ekleipsisfest/" target="_blank" rel="noopener">@ekleipsisfest</a>
+        </div>
+
+        <div class="info-card">
+          <span class="info-label">Ubicación</span>
+          <p>Gargallo, Teruel · España</p>
+        </div>
+
+        <div class="info-note">
+          Para solicitudes de glamping, usa preferiblemente el formulario específico de glamping desde la sección de entradas.
+        </div>
+      </aside>
+
+      <div class="form-card" id="formCard">
+
+        <div class="form-fields">
+
+          <form id="contactForm"
+                name="contacto-general"
+                method="POST"
+                action="/contacto.html?success=true"
+                data-netlify="true"
+                netlify-honeypot="bot-field">
+
+            <input type="hidden" name="form-name" value="contacto-general" />
+
+            <p hidden>
+              <label>No rellenes esto: <input name="bot-field" /></label>
+            </p>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label>Nombre completo</label>
+                <input type="text" name="nombre" placeholder="Tu nombre" required />
+              </div>
+
+              <div class="form-group">
+                <label>Email</label>
+                <input type="email" name="email" placeholder="tu@email.com" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label>Teléfono <span>opcional</span></label>
+                <input type="tel" name="telefono" placeholder="+34 600 000 000" />
+              </div>
+
+              <div class="form-group">
+                <label>Tipo de consulta</label>
+                <select name="tipo_consulta" required>
+                  <option value="" disabled selected>Selecciona...</option>
+                  <option value="Entradas">Entradas</option>
+                  <option value="Glamping">Glamping</option>
+                  <option value="Colaboraciones">Colaboraciones</option>
+                  <option value="Prensa">Prensa</option>
+                  <option value="Patrocinios">Patrocinios</option>
+                  <option value="Food trucks / proveedores">Food trucks / proveedores</option>
+                  <option value="Información general">Información general</option>
+                  <option value="Otros">Otros</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Mensaje</label>
+              <textarea name="mensaje" placeholder="Cuéntanos en qué podemos ayudarte..." required></textarea>
+            </div>
+
+            <button type="submit" class="form-submit">
+              Enviar mensaje
+            </button>
+
+            <p class="form-note">
+              <svg viewBox="0 0 24 24">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
+              Tus datos se usarán solo para responder a tu consulta.
+            </p>
+
+          </form>
+        </div>
+
+        <div class="form-success">
+          <div class="success-icon">
+            <svg viewBox="0 0 24 24">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </div>
+
+          <h2>Mensaje enviado</h2>
+
+          <p>
+            Hemos recibido tu consulta. Te responderemos lo antes posible.
+          </p>
+
+          <a href="index.html" class="success-back">
+            Volver al festival
+          </a>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
