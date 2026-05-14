@@ -1,4 +1,13 @@
 User-agent: *
 Allow: /
+Disallow: /glamping-pedido.html
+Disallow: /aviso-legal.html
+Disallow: /cookies.html
+Disallow: /privacidad.html
+Disallow: /terminos.html
+Disallow: /assets/img/*.psd
+Disallow: /assets/img/*.pdf
+Disallow: /assets/img/*.txt
+Disallow: /assets/docs/
 
 Sitemap: https://ekleipsisfest.com/sitemap.xml
