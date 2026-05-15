@@ -3,26 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Descubre el glamping de Ekleipsis Fest 2026: bell tents Standard y cúpulas Premium pre-montadas para vivir el eclipse total de Sol del 12 de agosto en Gargallo, Teruel." />
   <title>Glamping · Ekleipsis Fest 2026</title>
-
-  <meta
-    name="description"
-    content="Descubre las opciones de glamping de Ekleipsis Fest 2026: tiendas Standard y Premium para vivir el eclipse con más comodidad."
-  />
-
+  <meta name="description" content="Descubre el glamping de Ekleipsis Fest 2026: bell tents Standard y cúpulas Premium pre-montadas para vivir el eclipse total de Sol del 12 de agosto en Gargallo, Teruel." />
   <meta name="robots" content="index, follow" />
 
   <link rel="icon" type="image/png" href="assets/img/fav_icon.png" />
-
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=Judson:wght@400;700&display=swap"
-    rel="stylesheet"
-  />
-
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=Judson:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="css/glamping.css" />
 </head>
@@ -30,433 +18,253 @@
 <body class="page-glamping">
 
   <header class="site-header visible">
-
     <div class="header-container">
 
       <a href="index.html" class="logo">
-        <img
-          src="assets/img/EKLEIPSIS FEST_logo_final.png"
-          alt="Ekleipsis Fest"
-        />
+        <img src="assets/img/EKLEIPSIS FEST_logo_final.png" alt="Ekleipsis Fest" />
       </a>
 
-      <div class="header-right">
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html#eclipse" data-i18n="nav_eclipse">El eclipse</a>
+        <a href="index.html#programa" data-i18n="nav_programa">Programa</a>
+        <a href="index.html#entradas" data-i18n="nav_entradas">Entradas</a>
+        <a href="glamping.html" class="active" data-i18n="nav_glamping">Glamping</a>
+        <a href="index.html#mapa" data-i18n="nav_mapa">Mapa</a>
+        <a href="index.html#seguridad" data-i18n="nav_seguridad">Seguridad</a>
+        <a href="index.html#faq" data-i18n="nav_faq">FAQ</a>
+        <a href="index.html#contacto" data-i18n="nav_contacto">Contacto</a>
+      </nav>
 
+      <div class="header-right">
         <div class="language-switcher">
           <button class="lang-btn active" data-lang="es">ES</button>
           <button class="lang-btn" data-lang="en">EN</button>
           <button class="lang-btn" data-lang="fr">FR</button>
           <button class="lang-btn" data-lang="de">DE</button>
         </div>
-
-        <button
-          class="menu-toggle"
-          id="menuToggle"
-          aria-label="Abrir menú"
-        >
-          <span></span>
-          <span></span>
-          <span></span>
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+          <span></span><span></span><span></span>
         </button>
-
       </div>
 
-      <nav class="main-nav" id="mainNav">
-        <a href="index.html#eclipse">El eclipse</a>
-        <a href="index.html#programa">Programa</a>
-        <a href="index.html#entradas">Entradas</a>
-        <a href="glamping.html" class="active">Glamping</a>
-        <a href="index.html#mapa">Mapa</a>
-        <a href="index.html#seguridad">Seguridad</a>
-        <a href="index.html#faq">FAQ</a>
-        <a href="index.html#contacto">Contacto</a>
-      </nav>
-
     </div>
-
   </header>
 
   <main>
 
     <section class="glamping-section" id="glamping">
-
       <div class="container">
 
         <!-- HEADER -->
-
         <div class="glamp-header">
-
-          <p class="section-tag">
-            ✦ Glamping · Ekleipsis Fest 2026
-          </p>
-
-          <h1>
-            No montes.<br>
-            <span>Llega y disfruta.</span>
-          </h1>
-
-          <p class="glamp-lead">
+          <p class="section-tag" data-i18n="glamp_page_tag">✦ Glamping · Ekleipsis Fest 2026</p>
+          <h1 data-i18n="glamp_title">No montes.<br><span>Llega y disfruta.</span></h1>
+          <p class="glamp-lead" data-i18n="glamp_lead">
             Todo listo cuando llegues. Cama, colchón, ropa de cama y una tienda
             preparada para que solo tengas que entrar y disfrutar del festival.
           </p>
-
         </div>
 
         <!-- STANDARD -->
-
         <div class="glamp-tier">
-
           <div class="glamp-tier-header">
-
-            <span class="glamp-tier-pill pill-std">
-              ✦ Glamping Standard
-            </span>
-
+            <span class="glamp-tier-pill pill-std" data-i18n="glamp_std_pill">✦ Glamping Standard</span>
             <div class="glamp-tier-line"></div>
-
-            <span class="glamp-tier-desc">
-              Bell tent · Estilo festival
-            </span>
-
+            <span class="glamp-tier-desc" data-i18n="glamp_std_desc">Bell tent · Estilo festival</span>
           </div>
 
           <div class="glamp-tier-body">
 
-            <!-- CAROUSEL -->
-
             <div class="glamp-carousel" id="carousel-std">
-
               <div class="glamp-carousel-track">
 
                 <div class="glamp-carousel-slide">
-
-                  <img
-                    src="assets/img/tiendas/carpa_1.jpg"
-                    alt="Glamping Standard — bell tent exterior"
-                  >
-
+                  <img src="assets/img/tiendas/carpa_1.jpg" alt="Glamping Standard — bell tent exterior">
                   <div class="glamp-carousel-overlay"></div>
-
                   <div class="glamp-carousel-label">
-                    <h3>Bell Tent — la tienda que todos quieren ver</h3>
-
-                    <p>
-                      Icónica, cálida y festivalera. Llegas, abres la cremallera
-                      y ya estás dentro de la experiencia.
-                    </p>
+                    <h3 data-i18n="glamp_std_slide1_title">Bell Tent — la tienda que todos quieren ver</h3>
+                    <p data-i18n="glamp_std_slide1_text">Icónica, cálida y festivalera. Llegas, abres la cremallera y ya estás dentro de la experiencia.</p>
                   </div>
-
                 </div>
 
                 <div class="glamp-carousel-slide">
-
-                  <img
-                    src="assets/img/tiendas/carpa_2.jpg"
-                    alt="Glamping Standard — interior equipado"
-                  >
-
+                  <img src="assets/img/tiendas/carpa_2.jpg" alt="Glamping Standard — interior equipado">
                   <div class="glamp-carousel-overlay"></div>
-
                   <div class="glamp-carousel-label">
-                    <h3>Interior preparado para ti</h3>
-
-                    <p>
-                      Camas, iluminación y equipamiento listos cuando llegues.
-                    </p>
+                    <h3 data-i18n="glamp_std_slide2_title">Interior preparado para ti</h3>
+                    <p data-i18n="glamp_std_slide2_text">Camas, iluminación y equipamiento listos cuando llegues.</p>
                   </div>
-
                 </div>
 
                 <div class="glamp-carousel-slide">
-
-                  <img
-                    src="assets/img/tiendas/carpa_3.jpg"
-                    alt="Glamping Standard — ambiente festival"
-                  >
-
+                  <img src="assets/img/tiendas/carpa_3.jpg" alt="Glamping Standard — ambiente festival">
                   <div class="glamp-carousel-overlay"></div>
-
                   <div class="glamp-carousel-label">
-                    <h3>El festival desde dentro</h3>
-
-                    <p>
-                      A pocos pasos del escenario y la zona de observación del eclipse.
-                    </p>
+                    <h3 data-i18n="glamp_std_slide3_title">El festival desde dentro</h3>
+                    <p data-i18n="glamp_std_slide3_text">A pocos pasos del escenario y la zona de observación del eclipse.</p>
                   </div>
-
                 </div>
 
               </div>
 
-              <button
-                class="glamp-carousel-btn glamp-carousel-prev"
-                aria-label="Foto anterior"
-              >
+              <button class="glamp-carousel-btn glamp-carousel-prev" aria-label="Foto anterior">
                 <i data-lucide="chevron-left"></i>
               </button>
-
-              <button
-                class="glamp-carousel-btn glamp-carousel-next"
-                aria-label="Foto siguiente"
-              >
+              <button class="glamp-carousel-btn glamp-carousel-next" aria-label="Foto siguiente">
                 <i data-lucide="chevron-right"></i>
               </button>
-
               <div class="glamp-carousel-dots">
                 <button class="glamp-dot active" aria-label="Foto 1"></button>
                 <button class="glamp-dot" aria-label="Foto 2"></button>
                 <button class="glamp-dot" aria-label="Foto 3"></button>
               </div>
-
             </div>
 
-            <!-- CARD -->
-
             <div class="glamp-cards">
-
               <article class="glamp-card glamp-card-highlight">
-
-                <span class="glamp-hot hot-std">
-                  Más popular
-                </span>
-
-                <h4>Standard</h4>
-
-                <p class="glamp-sub">
+                <span class="glamp-hot hot-std" data-i18n="glamp_std_hot">Más popular</span>
+                <h4 data-i18n="glamp_std_name">Standard</h4>
+                <p class="glamp-sub" data-i18n="glamp_std_sub">
                   Bell tent pre-montada disponible para 4 u 8 personas.
                   Una opción cómoda y práctica para llegar al festival sin montar tienda.
                 </p>
-
                 <ul class="glamp-feats">
-                  <li>Modalidad para 4 personas</li>
-                  <li>Modalidad para 8 personas</li>
-                  <li>4 u 8 camas según modalidad</li>
-                  <li>Mesita de noche</li>
-                  <li>Lámpara a pilas Fatboy LED “The Edison”</li>
-                  <li>Múltiples tomas de corriente</li>
-                  <li>Conexión a la fuente de alimentación</li>
-                  <li>Alfombra Fatboy</li>
-                  <li>Candado incluido</li>
-                  <li>Acceso zona glamping</li>
+                  <li data-i18n="glamp_std_feat1">Modalidad para 4 personas</li>
+                  <li data-i18n="glamp_std_feat2">Modalidad para 8 personas</li>
+                  <li data-i18n="glamp_std_feat3">4 u 8 camas según modalidad</li>
+                  <li data-i18n="glamp_std_feat4">Mesita de noche</li>
+                  <li data-i18n="glamp_std_feat5">Lámpara a pilas Fatboy LED "The Edison"</li>
+                  <li data-i18n="glamp_std_feat6">Múltiples tomas de corriente</li>
+                  <li data-i18n="glamp_std_feat7">Conexión a la fuente de alimentación</li>
+                  <li data-i18n="glamp_std_feat8">Alfombra Fatboy</li>
+                  <li data-i18n="glamp_std_feat9">Candado incluido</li>
+                  <li data-i18n="glamp_std_feat10">Acceso zona glamping</li>
                 </ul>
-
               </article>
-
             </div>
 
           </div>
-
         </div>
 
         <div class="glamp-sep"></div>
 
         <!-- PREMIUM -->
-
         <div class="glamp-tier">
-
           <div class="glamp-tier-header">
-
-            <span class="glamp-tier-pill pill-prm">
-              ✦ Glamping Premium
-            </span>
-
+            <span class="glamp-tier-pill pill-prm" data-i18n="glamp_prm_pill">✦ Glamping Premium</span>
             <div class="glamp-tier-line"></div>
-
-            <span class="glamp-tier-desc">
-              Cúpula · Máximo confort
-            </span>
-
+            <span class="glamp-tier-desc" data-i18n="glamp_prm_desc">Cúpula · Máximo confort</span>
           </div>
 
           <div class="glamp-tier-body">
 
-            <!-- CAROUSEL -->
-
             <div class="glamp-carousel" id="carousel-prm">
-
               <div class="glamp-carousel-track">
 
                 <div class="glamp-carousel-slide">
-
-                  <img
-                    src="assets/img/tiendas/domo_1.jpg"
-                    alt="Glamping Premium — cúpula exterior"
-                  >
-
+                  <img src="assets/img/tiendas/domo_1.jpg" alt="Glamping Premium — cúpula exterior">
                   <div class="glamp-carousel-overlay"></div>
-
                   <div class="glamp-carousel-label">
-                    <h3>Cúpula Premium — otra dimensión</h3>
-
-                    <p>
-                      Más espacio, más confort y una experiencia diferente dentro del festival.
-                    </p>
+                    <h3 data-i18n="glamp_prm_slide1_title">Cúpula Premium — otra dimensión</h3>
+                    <p data-i18n="glamp_prm_slide1_text">Más espacio, más confort y una experiencia diferente dentro del festival.</p>
                   </div>
-
                 </div>
 
                 <div class="glamp-carousel-slide">
-
-                  <img
-                    src="assets/img/tiendas/domo_2.jpg"
-                    alt="Glamping Premium — colchón olímpico"
-                  >
-
+                  <img src="assets/img/tiendas/domo_2.jpg" alt="Glamping Premium — colchón olímpico">
                   <div class="glamp-carousel-overlay"></div>
-
                   <div class="glamp-carousel-label">
-                    <h3>Colchón oficial · París 2024</h3>
-
-                    <p>
-                      El mismo colchón utilizado por los atletas olímpicos.
-                    </p>
+                    <h3 data-i18n="glamp_prm_slide2_title">Colchón oficial · París 2024</h3>
+                    <p data-i18n="glamp_prm_slide2_text">El mismo colchón utilizado por los atletas olímpicos.</p>
                   </div>
-
                 </div>
 
                 <div class="glamp-carousel-slide">
-
-                  <img
-                    src="assets/img/tiendas/domo_3.jpg"
-                    alt="Glamping Premium — detalle interior"
-                  >
-
+                  <img src="assets/img/tiendas/domo_3.jpg" alt="Glamping Premium — detalle interior">
                   <div class="glamp-carousel-overlay"></div>
-
                   <div class="glamp-carousel-label">
-                    <h3>Cada detalle, pensado para ti</h3>
-
-                    <p>
-                      Ventilador, frigorífico, iluminación y confort premium.
-                    </p>
+                    <h3 data-i18n="glamp_prm_slide3_title">Cada detalle, pensado para ti</h3>
+                    <p data-i18n="glamp_prm_slide3_text">Ventilador, frigorífico, iluminación y confort premium.</p>
                   </div>
-
                 </div>
 
               </div>
 
-              <button
-                class="glamp-carousel-btn glamp-carousel-prev"
-                aria-label="Foto anterior"
-              >
+              <button class="glamp-carousel-btn glamp-carousel-prev" aria-label="Foto anterior">
                 <i data-lucide="chevron-left"></i>
               </button>
-
-              <button
-                class="glamp-carousel-btn glamp-carousel-next"
-                aria-label="Foto siguiente"
-              >
+              <button class="glamp-carousel-btn glamp-carousel-next" aria-label="Foto siguiente">
                 <i data-lucide="chevron-right"></i>
               </button>
-
               <div class="glamp-carousel-dots">
                 <button class="glamp-dot active" aria-label="Foto 1"></button>
                 <button class="glamp-dot" aria-label="Foto 2"></button>
                 <button class="glamp-dot" aria-label="Foto 3"></button>
               </div>
-
             </div>
 
-            <!-- CARD -->
-
             <div class="glamp-cards">
-
               <article class="glamp-card glamp-card-prm">
-
-                <span class="glamp-hot hot-prm">
-                  Experiencia completa
-                </span>
-
-                <h4>Premium</h4>
-
-                <p class="glamp-sub">
+                <span class="glamp-hot hot-prm" data-i18n="glamp_prm_hot">Experiencia completa</span>
+                <h4 data-i18n="glamp_prm_name">Premium</h4>
+                <p class="glamp-sub" data-i18n="glamp_prm_sub">
                   Cúpula Premium para 4 personas con equipamiento completo,
                   mayor confort interior y detalles pensados para descansar durante el festival.
                 </p>
 
                 <div class="glamp-olympic">
-
-                  <div class="glamp-olympic-icon">
-                    <i data-lucide="medal"></i>
-                  </div>
-
+                  <div class="glamp-olympic-icon"><i data-lucide="medal"></i></div>
                   <div>
-                    <strong>
-                      Colchón oficial · París 2024
-                    </strong>
-
-                    <span>
-                      El mismo colchón utilizado por los atletas olímpicos.
-                    </span>
+                    <strong data-i18n="glamp_prm_olympic_title">Colchón oficial · París 2024</strong>
+                    <span data-i18n="glamp_prm_olympic_text">El mismo colchón utilizado por los atletas olímpicos.</span>
                   </div>
-
                 </div>
 
                 <ul class="glamp-feats">
-                  <li>Modalidad para 4 personas</li>
-                  <li>Cúpula pre-montada</li>
-                  <li>Camas individuales 80 × 200 cm con colchón</li>
-                  <li>Ropa de cama completa</li>
-                  <li>Almohadas, edredón, sábanas y mantas</li>
-                  <li>Mesita de noche</li>
-                  <li>Lámpara Fatboy LED “The Edison”</li>
-                  <li>Enchufe múltiple y toma de corriente</li>
-                  <li>Alfombra Fatboy</li>
-                  <li>Ventilador</li>
-                  <li>Frigorífico</li>
-                  <li>Acceso zona glamping</li>
+                  <li data-i18n="glamp_prm_feat1">Modalidad para 4 personas</li>
+                  <li data-i18n="glamp_prm_feat2">Cúpula pre-montada</li>
+                  <li data-i18n="glamp_prm_feat3">Camas individuales 80 × 200 cm con colchón</li>
+                  <li data-i18n="glamp_prm_feat4">Ropa de cama completa</li>
+                  <li data-i18n="glamp_prm_feat5">Almohadas, edredón, sábanas y mantas</li>
+                  <li data-i18n="glamp_prm_feat6">Mesita de noche</li>
+                  <li data-i18n="glamp_prm_feat7">Lámpara Fatboy LED "The Edison"</li>
+                  <li data-i18n="glamp_prm_feat8">Enchufe múltiple y toma de corriente</li>
+                  <li data-i18n="glamp_prm_feat9">Alfombra Fatboy</li>
+                  <li data-i18n="glamp_prm_feat10">Ventilador</li>
+                  <li data-i18n="glamp_prm_feat11">Frigorífico</li>
+                  <li data-i18n="glamp_prm_feat12">Acceso zona glamping</li>
                 </ul>
-
               </article>
-
             </div>
 
           </div>
-
         </div>
 
         <!-- CTA -->
-
         <div class="glamp-urgency">
-
           <i data-lucide="alert-triangle"></i>
-
           <div>
-
-            <strong>
-              Plazas muy limitadas
-            </strong>
-
-            <p>
+            <strong data-i18n="glamp_urgency_title">Plazas muy limitadas</strong>
+            <p data-i18n="glamp_urgency_text">
               El glamping siempre vuela. Reserva con antelación y
               asegura tu tienda antes de que se agoten.
             </p>
-
           </div>
-
-          <a
-            href="index.html#entradas"
-            class="btn btn-primary"
-            style="flex-shrink:0"
-          >
+          <a href="index.html#entradas" class="btn btn-primary" style="flex-shrink:0" data-i18n="glamp_urgency_cta">
             Ver precios y reservar
           </a>
-
         </div>
 
       </div>
-
     </section>
 
   </main>
 
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
-<script src="js/carousel.js"></script>
-<script src="js/main.js"></script>
-
-<script>
-  lucide.createIcons();
-</script>
+  <script src="js/i18n.js"></script>
+  <script src="js/carousel.js"></script>
+  <script src="js/main.js"></script>
+  <script>lucide.createIcons();</script>
 
 </body>
 </html>
