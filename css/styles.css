@@ -761,11 +761,10 @@ a { color: inherit; }
   color: #fff;
 }
 
-.ticket-price span,
+.ticket-price span + span,
 .ticket-capacity-option small {
   font-size: 1rem;
   font-weight: 500;
-
   color: rgba(255,255,255,0.7);
 }
 
