@@ -807,15 +807,21 @@ a { color: inherit; }
 }
 
 .ticket-capacity-option strong {
-  font-size: 2.1rem;
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  font-size: 2.4rem;
   font-weight: 900;
-
   line-height: 1;
-
   color: #fff;
-
   white-space: nowrap;
 }
+.ticket-capacity-option strong span {
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+}
+
 
 /* ── LISTAS ─────────────────────────────────────────────── */
 

@@ -139,7 +139,7 @@
   "ticket_std_feat4":   "Múltiples tomas de corriente",
   "ticket_std_feat5":   "Alfombra Fatboy",
   "ticket_std_feat6":   "Candado",
-  "ticket_std_btn1":    "Entradas bajo pedido",
+  "ticket_std_btn1":    "COMPRAR ENTRADAS",
   "ticket_std_btn2":    "Ver glamping",
   "ticket_prm_badge":   "Glamping Premium",
   "ticket_prm_4p":      "4 personas",
@@ -153,7 +153,7 @@
   "ticket_prm_feat6":   "Alfombra Fatboy",
   "ticket_prm_feat7":   "Ventilador",
   "ticket_prm_feat8":   "Frigorífico",
-  "ticket_prm_btn1":    "Entradas bajo pedido",
+  "ticket_prm_btn1":    "COMPRAR ENTRADAS",
   "ticket_prm_btn2":    "Ver glamping",
 
   "map_section_tag":   "Recinto",

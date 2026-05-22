@@ -139,7 +139,7 @@
   "ticket_std_feat4":   "Multiple power sockets",
   "ticket_std_feat5":   "Fatboy rug",
   "ticket_std_feat6":   "Padlock",
-  "ticket_std_btn1":    "Tickets on request",
+  "ticket_std_btn1":    "Buy tickets",
   "ticket_std_btn2":    "View glamping",
   "ticket_prm_badge":   "Premium Glamping",
   "ticket_prm_4p":      "4 people",
@@ -153,7 +153,7 @@
   "ticket_prm_feat6":   "Fatboy rug",
   "ticket_prm_feat7":   "Fan",
   "ticket_prm_feat8":   "Fridge",
-  "ticket_prm_btn1":    "Tickets on request",
+  "ticket_prm_btn1":    "Buy tickets",
   "ticket_prm_btn2":    "View glamping",
 
   "map_section_tag":   "Venue",

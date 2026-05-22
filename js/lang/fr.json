@@ -140,7 +140,7 @@
   "ticket_std_feat4":   "Prises électriques multiples",
   "ticket_std_feat5":   "Tapis Fatboy",
   "ticket_std_feat6":   "Cadenas",
-  "ticket_std_btn1":    "Billets sur demande",
+  "ticket_std_btn1":    "Acheter des billets",
   "ticket_std_btn2":    "Voir le glamping",
   "ticket_prm_badge":   "Glamping Premium",
   "ticket_prm_4p":      "4 personnes",
@@ -154,7 +154,7 @@
   "ticket_prm_feat6":   "Tapis Fatboy",
   "ticket_prm_feat7":   "Ventilateur",
   "ticket_prm_feat8":   "Réfrigérateur",
-  "ticket_prm_btn1":    "Billets sur demande",
+  "ticket_prm_btn1":    "Acheter des billets",
   "ticket_prm_btn2":    "Voir le glamping",
 
   "map_section_tag":   "Site",
